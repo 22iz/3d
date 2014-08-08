@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head>
+	<title>3d</title>
+	<style type="text/css">
+		#container{
+			-webkit-perspective: 800;
+			-webkit-perspective-origin: 50% 50%;
+			-webkit-transform-style: -webkit-preserve-3d;
+		}
+		#cube{
+			width: 500px;
+			height: 500px;
+			margin: 100px auto;
+			background-color: #69c;
+
+			-webkit-transform: rotateY(45deg);
+			-webkit-transition: background-color 3s ease-in;
+		}
+		#cube:hover{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id='cube'></div>
+	</div>
+
+</body>
+</html>
